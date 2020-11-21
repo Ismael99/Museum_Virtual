@@ -12,28 +12,23 @@ const NavbarContainer = () => {
     return (
             <Fragment>
 
-                <Navbar collapseOnSelect expand="lg" className='Navbar'>
-                    <Link>
+                <Navbar collapseOnSelect expand="lg" className='Navbar py-0'>
+                    <Link to='/' className='py-0 animated rubberBand'>
                        <img className='logo' src={logo} alt='logo'  />
                     </Link>
-                  <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                  <Navbar.Collapse id="responsive-navbar-nav">
-                    <Nav className="mr-auto">
-                      <Nav.Link href="#features">Features</Nav.Link>
-                      <Nav.Link href="#pricing">Pricing</Nav.Link>
-                      <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-                        <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                        <NavDropdown.Divider />
-                        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-                      </NavDropdown>
-                    </Nav>
-                    <Nav>
-                      <Nav.Link href="#deets">More deets</Nav.Link>
-                      <Nav.Link eventKey={2} href="#memes">
-                        Dank memes
-                      </Nav.Link>
+                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                    <Navbar.Collapse id="responsive-navbar-nav" className='py-0'>
+                    <Nav className="mr-auto py-0">
+                    <Nav.Link className='btn-navbar my-0  mx-4' href="/"><h5>Home</h5></Nav.Link>
+                        <h5>
+                      <NavDropdown className='btn-navbar mx-4' title="Artistas" id="collasible-nav-dropdown">
+                        <NavDropdown.Item className='item' href="#action/3.1">Actor Name</NavDropdown.Item>
+                        <NavDropdown.Item className='item' href="#action/3.2">Actor Name</NavDropdown.Item>
+                        <NavDropdown.Item className='item' href="#action/3.3">Actor Name</NavDropdown.Item>
+                        <NavDropdown.Item className='item' href="#action/3.3">Actor Name</NavDropdown.Item>
+                        <NavDropdown.Item className='item' href="#action/3.3">Actor Name</NavDropdown.Item>
+                    </NavDropdown>
+                    </h5>
                     </Nav>
                   </Navbar.Collapse>
               </Navbar>
@@ -42,7 +37,21 @@ const NavbarContainer = () => {
                   <Route exact path={match.path}>
                     <Home />
                   </Route>
-                </Switch>
+              </Switch>
+              <footer class="footer mt-5 text-white">
+                  <div className="row">
+                      <div className="col-6">
+                            <img src={logo} className='logo-footer' alt="logo" />
+                      </div>
+                      <div className="col-6 text-right my-auto">
+                        <div class="content-footer">
+                            <h3><strong className="sub-title">Museo de Artes</strong></h3>
+                          <h4>copyright&copy;</h4>
+                        </div>
+                      </div>
+                  </div>
+                  </footer>
+
             </Fragment>
     )
 }
