@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react'
+import React from 'react'
 import View from './components/View'
 import img_prueba from './images/museum.jpg'
 
