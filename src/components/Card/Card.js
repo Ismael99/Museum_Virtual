@@ -9,7 +9,7 @@ const Cards= (props) =>{
             <Card className='Card animated fadeIn' 
             style={{ 
                 width: '95%', 
-                height: '40rem',
+                height: '30rem',
             }}>
                 <Card.Img variant="top" src={image} />
             <Card.Body>
