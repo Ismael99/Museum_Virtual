@@ -5,3 +5,19 @@
 .Card{
     border: 1px groove rgb(56, 51, 99);
 }
+
+.Card-title{
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: bold;
+
+}
+
+.Card-description{
+    font-family: 'Nanum Myeongjo', serif;
+
+}
+
+.Card-link{
+    font-family: 'Nanum Myeongjo', serif;
+    font-style: oblique;
+}
