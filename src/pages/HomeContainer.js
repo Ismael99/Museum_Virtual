@@ -21,13 +21,13 @@ const HomeContainer = () => {
                     <Navbar.Collapse id="responsive-navbar-nav" className='py-0'>
                     <Nav className="mr-auto py-0">
                     <Nav.Link className='btn-navbar my-0  mx-4' href="/"><h5>Home</h5></Nav.Link>
-                        <h5>
+                    <h5>
                       <NavDropdown className='btn-navbar mx-4' title="Artistas" id="collasible-nav-dropdown">
-                        <NavDropdown.Item className='item' href="#action/3.1">Actor Name</NavDropdown.Item>
-                        <NavDropdown.Item className='item' href="#action/3.2">Actor Name</NavDropdown.Item>
-                        <NavDropdown.Item className='item' href="#action/3.3">Actor Name</NavDropdown.Item>
-                        <NavDropdown.Item className='item' href="#action/3.3">Actor Name</NavDropdown.Item>
-                        <NavDropdown.Item className='item' href="#action/3.3">Actor Name</NavDropdown.Item>
+                          <NavDropdown.Item className='item' href="/museum/autor">Actor Name</NavDropdown.Item>
+                          <NavDropdown.Item className='item' href="/museum/autor">Actor Name</NavDropdown.Item>
+                          <NavDropdown.Item className='item' href="/museum/autor">Actor Name</NavDropdown.Item>
+                          <NavDropdown.Item className='item' href="/museum/autor">Actor Name</NavDropdown.Item>
+                          <NavDropdown.Item className='item' href="/museum/autor">Actor Name</NavDropdown.Item>
                     </NavDropdown>
                     </h5>
                     </Nav>
