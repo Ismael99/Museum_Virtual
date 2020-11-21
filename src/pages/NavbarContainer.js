@@ -1,8 +1,9 @@
 import React, {Fragment} from 'react'
-import { Switch, Route, useRouteMatch } from "react-router-dom";
+import { Switch, Route, useRouteMatch, Link } from "react-router-dom";
 import Home from '../components/Home'
-
+import logo from '../images/logo_transparent.png'
 import {Navbar, NavDropdown, Nav} from 'react-bootstrap'
+import './NavbarContainer.css'
 
 const NavbarContainer = () => {
       // RouteMatch
@@ -11,8 +12,10 @@ const NavbarContainer = () => {
     return (
             <Fragment>
 
-                <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-                  <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+                <Navbar collapseOnSelect expand="lg" className='Navbar'>
+                    <Link>
+                       <img className='logo' src={logo} alt='logo'  />
+                    </Link>
                   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                   <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
