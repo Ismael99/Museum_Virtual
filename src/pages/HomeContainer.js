@@ -20,15 +20,28 @@ const HomeContainer = () => {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav" className='py-0'>
                     <Nav className="mr-auto py-0">
-                    <Nav.Link className='btn-navbar my-0  mx-4' href="/"><h5>Home</h5></Nav.Link>
+                    <Link className='btn-navbar Link-nav my-auto  mx-1' to="/"><h5>Home</h5></Link>
                     <h5>
-                      <NavDropdown className='btn-navbar mx-4' title="Artistas" id="collasible-nav-dropdown">
-                          <NavDropdown.Item className='item' href="/museum/autor">Actor Name</NavDropdown.Item>
-                          <NavDropdown.Item className='item' href="/museum/autor">Actor Name</NavDropdown.Item>
-                          <NavDropdown.Item className='item' href="/museum/autor">Actor Name</NavDropdown.Item>
-                          <NavDropdown.Item className='item' href="/museum/autor">Actor Name</NavDropdown.Item>
-                          <NavDropdown.Item className='item' href="/museum/autor">Actor Name</NavDropdown.Item>
-                    </NavDropdown>
+                        <NavDropdown className='Link-nav btn-navbar mx-1' title="Artistas" id="collasible-nav-dropdown">
+                            <NavDropdown.Item className='text-center item-bg'>
+                                <Link className='item' to="/museum/autor">Actor Name</Link><br/>
+                            </NavDropdown.Item>
+                            <NavDropdown.Item className='text-center item-bg'>
+                                <Link className='item' to="/museum/autor">Actor Name</Link><br/>
+                            </NavDropdown.Item>
+                            <NavDropdown.Item className='text-center item-bg'>
+                                <Link className='item' to="/museum/autor">Actor Name</Link><br/>
+                            </NavDropdown.Item>
+                            <NavDropdown.Item className='text-center item-bg'>
+                                <Link className='item' to="/museum/autor">Actor Name</Link><br/>
+                            </NavDropdown.Item>
+                            <NavDropdown.Item className='text-center item-bg'>
+                                <Link className='item' to="/museum/autor">Actor Name</Link><br/>
+                            </NavDropdown.Item>
+                            <NavDropdown.Item className='text-center item-bg'>
+                                <Link className='item' to="/museum/autor">Actor Name</Link><br/>
+                            </NavDropdown.Item>
+                        </NavDropdown>
                     </h5>
                     </Nav>
                   </Navbar.Collapse>

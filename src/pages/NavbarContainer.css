@@ -20,8 +20,19 @@ background: linear-gradient(to right, #cc5333, #23074d); /* W3C, IE 10+/ Edge, F
     z-index: 5;
 }
 
+.item{
+    margin-right: 10px;
+    margin-left: ;
+    color: rgba(166, 60, 91, .8);
+}
+
 .item:hover{
-    background: rgba(235, 116, 91, .5);
+    text-decoration:none;
+    color: rgba(122, 45, 68, .8);
+}
+
+.item-bg:hover{
+    background: rgba(136, 207, 154, .3);
 }
 
 .logo-footer{
@@ -39,4 +50,16 @@ background: linear-gradient(to right, #6f0000, #200122); /* W3C, IE 10+/ Edge, F
 
 .logo-nav{
     background: rgba(31, 27, 66, .1 );
+}
+
+.Link-nav{
+    color:rgba(94, 24, 19, .7);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-right: 1px groove brown;
+}
+
+.Link-nav:hover{
+    color:black;
+    text-decoration:none;
 }
