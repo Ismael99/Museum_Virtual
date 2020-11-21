@@ -36,3 +36,7 @@ background: -webkit-linear-gradient(to right, #6f0000, #200122);  /* Chrome 10-2
 background: linear-gradient(to right, #6f0000, #200122); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
+
+.logo-nav{
+    background: rgba(31, 27, 66, .1 );
+}

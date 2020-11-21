@@ -9,6 +9,7 @@ const Home = () =>{
                     image="http://lorempixel.com/400/200"  
                     autor='Autor Name'
                     description='Description example'
+                    url='museum/autor'
                     /> 
                 </div>
                 <div className="col-lg-4 col-md-6 mt-3 mx-auto">
@@ -16,6 +17,7 @@ const Home = () =>{
                     image="http://lorempixel.com/400/200"  
                     autor='Autor Name'
                     description='Description example'
+                    url='museum/autor'
                     /> 
                 </div>
                 <div className="col-lg-4 col-md-6 mt-3 mx-auto">
@@ -23,6 +25,7 @@ const Home = () =>{
                     image="http://lorempixel.com/400/200"  
                     autor='Autor Name'
                     description='Description example'
+                    url='museum/autor'
                     /> 
                 </div>
                 <div className="col-lg-4 col-md-6 mt-3 mx-auto">
@@ -30,6 +33,7 @@ const Home = () =>{
                     image="http://lorempixel.com/400/200"  
                     autor='Autor Name'
                     description='Description example'
+                    url='museum/autor'
                     /> 
                 </div>
                 <div className="col-lg-4 col-md-6 mt-3 mx-auto">
@@ -37,6 +41,7 @@ const Home = () =>{
                     image="http://lorempixel.com/400/200"  
                     autor='Autor Name'
                     description='Description example'
+                    url='museum/autor'
                     /> 
                 </div>
             </div>

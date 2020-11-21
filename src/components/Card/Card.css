@@ -1,3 +1,7 @@
 .Card:hover{
     transform: translate3d(6px, -3px, 6px);
 }
+
+.Card{
+    border: 1px groove rgb(56, 51, 99);
+}

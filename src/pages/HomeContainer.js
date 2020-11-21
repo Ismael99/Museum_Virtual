@@ -1,11 +1,12 @@
+
 import React, {Fragment} from 'react'
 import { Switch, Route, useRouteMatch, Link } from "react-router-dom";
+import Home from '../components/Home'
 import logo from '../images/logo_transparent.png'
 import {Navbar, NavDropdown, Nav} from 'react-bootstrap'
-import ExampleAutor from './Autores/ExampleAutor'
 import './NavbarContainer.css'
 
-const NavbarContainer = () => {
+const HomeContainer = () => {
       // RouteMatch
         const match = useRouteMatch();
 
@@ -22,11 +23,11 @@ const NavbarContainer = () => {
                     <Nav.Link className='btn-navbar my-0  mx-4' href="/"><h5>Home</h5></Nav.Link>
                         <h5>
                       <NavDropdown className='btn-navbar mx-4' title="Artistas" id="collasible-nav-dropdown">
-                          <NavDropdown.Item className='item' href="/museum/autor">Actor Name</NavDropdown.Item>
-                          <NavDropdown.Item className='item' href="/museum/autor">Actor Name</NavDropdown.Item>
-                          <NavDropdown.Item className='item' href="/museum/autor">Actor Name</NavDropdown.Item>
-                          <NavDropdown.Item className='item' href="/museum/autor">Actor Name</NavDropdown.Item>
-                          <NavDropdown.Item className='item' href="/museum/autor">Actor Name</NavDropdown.Item>
+                        <NavDropdown.Item className='item' href="#action/3.1">Actor Name</NavDropdown.Item>
+                        <NavDropdown.Item className='item' href="#action/3.2">Actor Name</NavDropdown.Item>
+                        <NavDropdown.Item className='item' href="#action/3.3">Actor Name</NavDropdown.Item>
+                        <NavDropdown.Item className='item' href="#action/3.3">Actor Name</NavDropdown.Item>
+                        <NavDropdown.Item className='item' href="#action/3.3">Actor Name</NavDropdown.Item>
                     </NavDropdown>
                     </h5>
                     </Nav>
@@ -34,8 +35,8 @@ const NavbarContainer = () => {
               </Navbar>
                 <Switch>
                   {/*<!-- Es necesario que la ruta padre contenga un exact path --> */}
-                    <Route exact path={`${match.path}/autor`}>
-                        <ExampleAutor></ExampleAutor>
+                    <Route exact path={match.path}>
+                        <Home/>
                     </Route>
               </Switch>
               <footer className="footer mt-5 text-white">
@@ -56,4 +57,4 @@ const NavbarContainer = () => {
     )
 }
 
-export default NavbarContainer
+export default HomeContainer
